@@ -132,11 +132,15 @@ def run(tokens):
         
         i += 1
 
+def operations(tokens):
+    pass
+
 if __name__ == "__main__":
     with open("main.ds", "r") as f:
         c = f.read()
 
     tokens = tokenizer(c)
+    tokens = operations(tokens)
 
     run(tokens)
 
